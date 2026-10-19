@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://iiifdqggt6mc"]
+
+[ext_resource type="Script" uid="uid://dk5jfhd878hlt" path="res://main.gd" id="1_ig7tw"]
+
+[node name="MAIN" type="Node2D" unique_id=1070797082]
+script = ExtResource("1_ig7tw")
+
+[node name="BACKGROUND" type="ColorRect" parent="." unique_id=2112741520]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.059289254, 0.29602626, 1, 1)
+
+[node name="TITLE" type="Label" parent="." unique_id=1393823323]
+offset_top = 32.0
+offset_right = 1154.0
+offset_bottom = 129.0
+theme_override_font_sizes/font_size = 70
+text = "TOMAS URENA"
+horizontal_alignment = 1
+
+[node name="SUMMARY_BUTTON" type="Button" parent="." unique_id=1321702476]
+offset_left = 152.0
+offset_top = 560.0
+offset_right = 241.0
+offset_bottom = 591.0
+text = "SUMMARY"
+
+[node name="RESUME_BUTTON" type="Button" parent="." unique_id=1396397235]
+offset_left = 528.0
+offset_top = 560.0
+offset_right = 617.0
+offset_bottom = 591.0
+text = "RESUME"
+
+[node name="PROJECTS_BUTTON" type="Button" parent="." unique_id=1991638982]
+offset_left = 920.0
+offset_top = 560.0
+offset_right = 1009.0
+offset_bottom = 591.0
+text = "PROJECTS"
+
+[node name="SUMMARY" type="RichTextLabel" parent="." unique_id=1199138805]
+offset_left = 256.0
+offset_top = 192.0
+offset_right = 896.0
+offset_bottom = 512.0
+text = "Hello, my name is Tomas Urena... // INTRODUCTION"
+
+[node name="CONTACT" type="RichTextLabel" parent="." unique_id=1362871484]
+offset_left = 40.0
+offset_top = 136.0
+offset_right = 1120.0
+offset_bottom = 192.0
+bbcode_enabled = true
+text = "EMAIL: tomasu@nmsu.edu| GITHUB: [url=https://github.com/TomasUrena]TomasUrena[/url] | LINKEDIN: [url=https://www.linkedin.com/in/tomas-urena-1687833a2/]Tomas Urena[/url] "
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1000200490]
+
+[connection signal="pressed" from="RESUME_BUTTON" to="." method="_on_resume_button_pressed"]
+[connection signal="meta_clicked" from="CONTACT" to="." method="_on_contact_meta_clicked"]

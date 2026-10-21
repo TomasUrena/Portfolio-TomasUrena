@@ -1,6 +1,46 @@
 [gd_scene format=3 uid="uid://iiifdqggt6mc"]
 
 [ext_resource type="Script" uid="uid://dk5jfhd878hlt" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://bcin8idw1vp5x" path="res://photo.jpg" id="2_0xm2m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ig7tw"]
+bg_color = Color(0, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xm2m"]
+bg_color = Color(0, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
+bg_color = Color(0, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="MAIN" type="Node2D" unique_id=1070797082]
 script = ExtResource("1_ig7tw")
@@ -9,53 +49,94 @@ script = ExtResource("1_ig7tw")
 offset_right = 1152.0
 offset_bottom = 648.0
 color = Color(0.059289254, 0.29602626, 1, 1)
+metadata/_edit_lock_ = true
+
+[node name="PHOTO" type="TextureRect" parent="." unique_id=2011682651]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 3903.9995
+offset_bottom = 4623.9995
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_0xm2m")
+metadata/_edit_lock_ = true
 
 [node name="TITLE" type="Label" parent="." unique_id=1393823323]
-offset_top = 32.0
+offset_left = 448.0
+offset_top = 48.0
 offset_right = 1154.0
-offset_bottom = 129.0
+offset_bottom = 145.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
 theme_override_font_sizes/font_size = 70
 text = "TOMAS URENA"
 horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="CONTACT" type="RichTextLabel" parent="." unique_id=1362871484]
+offset_left = 448.0
+offset_top = 144.0
+offset_right = 1152.0
+offset_bottom = 200.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_constants/shadow_offset_x = 2
+bbcode_enabled = true
+text = "EMAIL: tomasu@nmsu.edu | GITHUB: [url=https://github.com/TomasUrena]TomasUrena[/url] | LINKEDIN: [url=https://www.linkedin.com/in/tomas-urena-1687833a2/]Tomas Urena[/url] "
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
 
 [node name="SUMMARY_BUTTON" type="Button" parent="." unique_id=1321702476]
-offset_left = 152.0
-offset_top = 560.0
-offset_right = 241.0
-offset_bottom = 591.0
+offset_left = 120.0
+offset_top = 552.0
+offset_right = 256.0
+offset_bottom = 608.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_ig7tw")
 text = "SUMMARY"
 
 [node name="RESUME_BUTTON" type="Button" parent="." unique_id=1396397235]
-offset_left = 528.0
-offset_top = 560.0
-offset_right = 617.0
-offset_bottom = 591.0
+offset_left = 512.0
+offset_top = 552.0
+offset_right = 648.0
+offset_bottom = 608.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_0xm2m")
 text = "RESUME"
 
 [node name="PROJECTS_BUTTON" type="Button" parent="." unique_id=1991638982]
-offset_left = 920.0
-offset_top = 560.0
-offset_right = 1009.0
-offset_bottom = 591.0
+offset_left = 896.0
+offset_top = 552.0
+offset_right = 1032.0
+offset_bottom = 608.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
 text = "PROJECTS"
 
 [node name="SUMMARY" type="RichTextLabel" parent="." unique_id=1199138805]
-offset_left = 256.0
-offset_top = 192.0
-offset_right = 896.0
-offset_bottom = 512.0
-text = "Hello, my name is Tomas Urena... // INTRODUCTION"
-
-[node name="CONTACT" type="RichTextLabel" parent="." unique_id=1362871484]
-offset_left = 40.0
-offset_top = 136.0
+offset_left = 480.0
+offset_top = 184.0
 offset_right = 1120.0
-offset_bottom = 192.0
+offset_bottom = 504.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
+text = "     Hello, my name is Tomas Urena. I am a recent New Mexico State University graduate. I graduated with a Bachelor of Science in Computer Science with a focus in Artificial Intelligence. I am currently studying for my Master’s degree. I plan to get a Master’s of Science in Computer Science. I am an inspiring creator(someone who makes things). As much as technology has been in my life, so has my desire to create an experience. I plan to get a job that can allow me to have time on my personal projects. I solve each problem as if it's the only problem I’m facing."
+horizontal_alignment = 3
+metadata/_edit_lock_ = true
+
+[node name="PROJECT_LIST" type="RichTextLabel" parent="." unique_id=2102898593]
+offset_left = 480.0
+offset_top = 184.0
+offset_right = 1120.0
+offset_bottom = 504.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
 bbcode_enabled = true
-text = "EMAIL: tomasu@nmsu.edu| GITHUB: [url=https://github.com/TomasUrena]TomasUrena[/url] | LINKEDIN: [url=https://www.linkedin.com/in/tomas-urena-1687833a2/]Tomas Urena[/url] "
-horizontal_alignment = 1
+text = "In The Depths - A video game that merges idle clicker and rogue-like gameplay. Visit the website [url=https://gremloid.github.io/In-The-Depths-Website/]HERE[/url].
+"
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1000200490]
-
-[connection signal="pressed" from="RESUME_BUTTON" to="." method="_on_resume_button_pressed"]
 [connection signal="meta_clicked" from="CONTACT" to="." method="_on_contact_meta_clicked"]
+[connection signal="pressed" from="SUMMARY_BUTTON" to="." method="_on_summary_button_pressed"]
+[connection signal="pressed" from="RESUME_BUTTON" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="PROJECTS_BUTTON" to="." method="_on_projects_button_pressed"]
+[connection signal="meta_clicked" from="PROJECT_LIST" to="." method="_on_contact_meta_clicked"]

@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://c85nhifs5epe1"]
+
+[ext_resource type="Script" uid="uid://dmype2c7r54sj" path="res://resume.gd" id="1_7dc1d"]
+[ext_resource type="Texture2D" uid="uid://d0hmycnhuc2o8" path="res://RESUME.jpg" id="1_kgtcx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ntm1e"]
+bg_color = Color(0, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kgtcx"]
+bg_color = Color(1, 0.64705884, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7dc1d"]
+bg_color = Color(1, 1, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Resume" type="Node2D" unique_id=1054691092]
+script = ExtResource("1_7dc1d")
+
+[node name="BACKGROUND" type="ColorRect" parent="." unique_id=1227642364]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="CURRENT_RESUME" type="TextureRect" parent="." unique_id=937554975]
+offset_left = 320.00003
+offset_right = 3679.9995
+offset_bottom = 4349.5522
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_kgtcx")
+
+[node name="BACK" type="Button" parent="." unique_id=1401255838]
+offset_left = 88.0
+offset_top = 72.0
+offset_right = 168.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_ntm1e")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kgtcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7dc1d")
+text = "BACK"
+
+[connection signal="pressed" from="BACK" to="." method="_on_back_pressed"]

@@ -15,6 +15,30 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kek77"]
+bg_color = Color(1, 0.64705884, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mycd"]
+bg_color = Color(1, 1, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xm2m"]
 bg_color = Color(0, 1, 1, 1)
 border_width_left = 5
@@ -27,8 +51,56 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vw27"]
+bg_color = Color(1, 0.64705884, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4fiow"]
+bg_color = Color(1, 1, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
 bg_color = Color(0, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_272bh"]
+bg_color = Color(1, 0.64705884, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
+bg_color = Color(1, 1, 0, 1)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
@@ -82,7 +154,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_outline_size = 2
 theme_override_constants/shadow_offset_x = 2
 bbcode_enabled = true
-text = "EMAIL: tomasu@nmsu.edu | GITHUB: [url=https://github.com/TomasUrena]TomasUrena[/url] | LINKEDIN: [url=https://www.linkedin.com/in/tomas-urena-1687833a2/]Tomas Urena[/url] "
+text = "EMAIL: tomasu@nmsu.edu | GITHUB: [url=https://github.com/TomasUrena][color=yellow]TomasUrena[/color][/url] | LINKEDIN: [url=https://www.linkedin.com/in/tomas-urena-1687833a2/][color=yellow]Tomas Urena[/color][/url] "
 horizontal_alignment = 1
 metadata/_edit_lock_ = true
 
@@ -92,7 +164,11 @@ offset_top = 552.0
 offset_right = 256.0
 offset_bottom = 608.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_ig7tw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kek77")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7mycd")
 text = "SUMMARY"
 
 [node name="RESUME_BUTTON" type="Button" parent="." unique_id=1396397235]
@@ -101,7 +177,11 @@ offset_top = 552.0
 offset_right = 648.0
 offset_bottom = 608.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_0xm2m")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5vw27")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4fiow")
 text = "RESUME"
 
 [node name="PROJECTS_BUTTON" type="Button" parent="." unique_id=1991638982]
@@ -110,7 +190,11 @@ offset_top = 552.0
 offset_right = 1032.0
 offset_bottom = 608.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_272bh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lquwl")
 text = "PROJECTS"
 
 [node name="SUMMARY" type="RichTextLabel" parent="." unique_id=1199138805]
@@ -132,7 +216,7 @@ offset_bottom = 504.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
 bbcode_enabled = true
-text = "In The Depths - A video game that merges idle clicker and rogue-like gameplay. Visit the website [url=https://gremloid.github.io/In-The-Depths-Website/]HERE[/url].
+text = "In The Depths - A video game that merges idle clicker and rogue-like gameplay. Visit the website [url=https://gremloid.github.io/In-The-Depths-Website/][color=yellow]HERE[/color][/url].
 "
 
 [connection signal="meta_clicked" from="CONTACT" to="." method="_on_contact_meta_clicked"]

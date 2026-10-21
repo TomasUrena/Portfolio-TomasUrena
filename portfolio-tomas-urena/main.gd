@@ -20,7 +20,7 @@ func _on_contact_meta_clicked(meta: Variant) -> void:
 
 
 func _on_resume_button_pressed() -> void:
-	OS.shell_open("res://pdfs/RESUME.pdf")
+	#OS.shell_open("res://pdfs/RESUME.pdf")
 	get_tree().change_scene_to_file("res://resume.tscn")
 	pass # Replace with function body.
 

@@ -217,6 +217,8 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
 bbcode_enabled = true
 text = "In The Depths - A video game that merges idle clicker and rogue-like gameplay. Visit the website [url=https://gremloid.github.io/In-The-Depths-Website/][color=yellow]HERE[/color][/url].
+
+Blueprints of the Mind - A pixel drawing program with a simple design. Visit the website [url=https://tomasurena.github.io/Blueprints-of-The-Mind/][color=yellow]HERE[/color][/url].
 "
 
 [connection signal="meta_clicked" from="CONTACT" to="." method="_on_contact_meta_clicked"]
